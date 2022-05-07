@@ -1,5 +1,5 @@
 const app = require('express')();
-const {PORT, SERVER_START_TEXT} = require("./core/constantes/constantes");
+const {PORT, SERVER_START_TEXT} = require("./src/core/constantes/constantes");
 
 app.get('/', (request, response)=>{
     response.setHeader('Content-Type', 'text/html');
