@@ -2,8 +2,7 @@ const app = require('express')();
 const {PORT, SERVER_START_TEXT} = require("./src/core/constantes/constantes");
 
 app.get('/', (request, response)=>{
-    response.setHeader('Content-Type', 'text/html');
-    response.status(200).send('<h1>Bonjour serveur</h1>');
+    response.status(200).send(SERVER_START_TEXT);
 });
 
 app.listen(PORT, ()=>console.log(`${SERVER_START_TEXT}${PORT}`))
